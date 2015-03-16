@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Избранное</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=1024">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <script src="js/modernizr-2.8.3.min.js"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="#">Объявления</a>
+                        </li>
+                        <li>
+                            <a href="#" class="main-has-arrow">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Фото и видео</a>
+                        </li>
+                        <li>
+                            <a href="#">Выставки</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="advert">
+                    <a href="#">+ Подать обьявление</a>
+                </div>
+            </div>
+        </header>
+        <div class="under-header">
+            <div class="container">
+                <div class="under-block">
+                    <div class="geo">
+                        <a class="geo-link">
+                            <p>Екатеринбург</p>
+                        </a>
+                    </div>
+                    <div class="search-block">
+                        <input type="text" class="input-search" placeholder="Поиск...">
+                        <div class="select select-search">
+                                <a href="javascript:void(0);" class="slct search-slct">По обьявлениям</a>
+                                <ul class="drop">
+                                    <li><a >select</a></li>
+                                    <li><a >select</a></li>
+                                    <li><a >select</a></li>
+                                    <li><a >select</a></li>
+                                </ul>
+                                <input type="hidden" id="select" />
+                            </div>
+                        <input type="submit" value="Найти" class="find">
+                    </div>
+                    <div class="cabinet">
+                        <a class="cabinet-link">Личный кабинет</a>
+                        <div class="dropdown">
+                            <ul>
+                                <li>
+                                    <a href="#">Обьявления</a>
+                                </li>
+                                <li>
+                                    <a href="#">Настройки</a>
+                                </li>
+                            </ul>
+                            <div class="exit">
+                                <a href="#">Выйти</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container register clearfix">
+            <div class="breadcrumbs">
+                 <ul>
+                   <li>
+                        <a href="#">Главная&nbsp;&nbsp;></a>
+                   </li>
+                   <li>
+                        <a href="#">Поиск обьявлений &nbsp;&nbsp;></a>
+                   </li>
+                   <li>
+                        <a href="#" class="has-arrow">Грузовики</a>&nbsp;>
+                   </li>
+                   <li>
+                        <a href="#" class="has-arrow">Гусеничные экскаваторы</a>
+                   </li>
+                 </ul>
+
+            </div>
+            <div class="center-block">
+                <div class="head">
+                    <h3>Избранное</h3>
+                    <input type="checkbox" id="exclude" class="photo-check" placeholder="">
+                    <label for="exclude" class="label-size">Исключить выбранное</label>
+                </div>
+                <div class="sorting-model clearfix">
+                    <div class="sorting-model-left">
+                        <span>Сортировать по :</span>
+                        <span class="sort-slct active">цене</span>
+                        <span class="sort-slct">дате</span>
+                        <span class="sort-slct">году</span>
+                        <span class="sort-slct">пробегу</span>
+                    </div>
+                </div>
+               <div class="main-tovar clearfix">
+                   <div class="main-tovar-block clearfix">
+                       <div class="main-tovar-block-left favorites-left">
+                            <input type="checkbox">
+                           <p class="adver-price rub_icon">50 232 754 </p>
+                           <div class="clearfix"></div>
+                           <a class="sevec">Севэкс</a>
+                           <div class="tovar-gps">
+                               <p>Владивосток</p>
+                               <p>5 марта</p>
+                           </div>
+                           
+                       </div>
+                       <div class="tovar-block-img">
+                           <a href="#">
+                                <img src="images/tovar.jpg" alt="" width="150" height="110">
+                            </a>
+                                <a class="photo">3</a>
+                        </div>
+                        <div class="main-tovar-block-right favorites-right">
+                            <a href="#" class="adver-link">Jungheinrich DRL-6RLGP (серия II)</a>
+                            <span class="year-model">2008</span>
+                            <div class="tovar-block-info">
+                                <p>Наработка 1240ч. Состояние отличное</p>
+                                <p>Дизель 5тыщ.км Синий Механик Ручная</p>
+                            </div>
+                            <a class="favorites-tovar no-icon"><span>Исключить из избранного</span></a>
+                            
+                            
+                        </div>
+                   </div>
+                   <div class="main-tovar-block clearfix">
+                       <div class="main-tovar-block-left favorites-left">
+                            <input type="checkbox">
+                           <p class="adver-price rub_icon">50 232 754 </p>
+                           <div class="clearfix"></div>
+                           <a class="sevec">Севэкс</a>
+                           <div class="tovar-gps">
+                               <p>Владивосток</p>
+                               <p>5 марта</p>
+                           </div>
+                           
+                       </div>
+                       <div class="tovar-block-img">
+                           <a href="#">
+                                <img src="images/tovar.jpg" alt="" width="150" height="110">
+                            </a>
+                                <a class="photo">3</a>
+                        </div>
+                        <div class="main-tovar-block-right favorites-right">
+                            <a href="#" class="adver-link">Jungheinrich DRL-6RLGP (серия II)</a>
+                            <span class="year-model">2008</span>
+                            <div class="tovar-block-info">
+                                <p>Наработка 1240ч. Состояние отличное</p>
+                                <p>Дизель 5тыщ.км Синий Механик Ручная</p>
+                            </div>
+                            <a class="favorites-tovar no-icon"><span>Исключить из избранного</span></a>
+                            
+                            
+                        </div>
+                   </div>
+                   <div class="main-tovar-block clearfix">
+                       <div class="main-tovar-block-left favorites-left">
+                            <input type="checkbox">
+                           <p class="adver-price rub_icon">50 754 </p>
+                           <div class="clearfix"></div>
+                           <a class="sevec">Севэкс</a>
+                           <div class="tovar-gps">
+                               <p>Владивосток</p>
+                               <p>5 марта</p>
+                           </div>
+                           
+                       </div>
+                       <div class="tovar-block-img">
+                           <a href="#">
+                                <img src="images/tovar.jpg" alt="" width="150" height="110">
+                            </a>
+                                <a class="photo">3</a>
+                        </div>
+                        <div class="main-tovar-block-right favorites-right">
+                            <a href="#" class="adver-link">Jungheinrich DRL-6RLGP (серия II)</a>
+                            <span class="year-model">2008</span>
+                            <div class="tovar-block-info">
+                                <p>Наработка 1240ч. Состояние отличное</p>
+                                <p>Дизель 5тыщ.км Синий Механик Ручная</p>
+                            </div>
+                            <a class="favorites-tovar no-icon"><span>Исключить из избранного</span></a>
+                            
+                            
+                        </div>
+                   </div>
+               </div>
+                
+                
+                
+            </div><!-- end center-block-->
+            <div class="sidebar">
+                <div class="advrt">
+                    <p>Список избранных объявлени для неавторизованных пользователей храниться лишь некоторое время после завершения работы с am.ru </p>
+                    <p>Чтобы сохранить ваше избранное навсегда необходимо <a href="#">войти</a> или <a href="#">зарегистрироваться</a></p>
+                    
+                </div>
+            </div><!-- end sidebar-->
+            
+               
+                
+            
+        </div>
+        <footer>
+            <div class="container clearfix footer">
+                <div class="footer-top">
+                    <ul class="footer-menu">
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Статьи</a></li>
+                        <li><a href="#">Интервью</a></li>
+                        <li><a href="#">Фото</a></li>
+                        <li><a href="#">Видео</a></li>
+                    </ul>
+                    <a class="btn-top"></a>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright clearfix">
+                        <img src="images/copy.jpg" alt="">
+                        <div class="copy-info">
+                            <p>© 2013 Bilmard </p>
+                            <p>Свидетельство о регистрации СМИ Эл № ФС77-52428 от 28.12.2012 г.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="form-mask"></div>
+        <div class="modal">
+            <div class="header-modal">
+                <h3>Настроить регион поиска</h3>
+                <a class="closed">+</a>
+            </div> 
+            <div class="modal-block clearfix">
+                <div class="modal-sidebar">
+                    <div class="sidebar-top">
+                        <p>Россия</p>
+                        <a href="#">Украина</a>
+                    </div> 
+                    <ul class="cities-list">
+                        <li><a href="#">Владивосток</a></li>
+                        <li><a href="#">Волгоград</a></li>
+                        <li><a href="#">Воронеж</a></li>
+                        <li><a href="#">Екатеринбург</a></li>
+                        <li><a href="#">Иркутск</a></li>
+                        <li><a href="#">Казань</a></li>
+                    </ul>
+                </div>
+                <div class="modal-content">
+                    <ul class="abc">
+                        <li>
+                            <div class="abc_letters">А</div>
+                            <ul class="regions">
+                                <li> <a href="#">Адыгея респ.</a></li>
+                                <li> <a href="#">Алтай респ.</a></li>
+                                <li> <a href="#">Алтайский край</a></li>
+                                <li> <a href="#">Амурская обл.</a></li>
+                                <li> <a href="#">Архангельская обл.</a></li>
+                                <li> <a href="#">Астраханская обл.</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="abc_letters">Б</div>
+                            <ul class="regions">
+                                <li> <a href="#">Башкортостан респ.</a></li>
+                                <li> <a href="#">Белгородская обл.</a></li>
+                                <li> <a href="#">Брянская обл.</a></li>
+                                <li> <a href="#">Бурятия респ.</a></li>
+                             </ul>
+                        </li>
+                        <li>
+                        <div class="abc_letters">В</div>
+                        <ul class="regions">
+                            <li> <a href="#">Владимирская обл.</a></li>
+                            <li> <a href="#">Волгоградская обл.</a></li>
+                            <li> <a href="#">Вологодская обл.</a></li>
+                            <li> <a href="#">Воронежская обл.</a></li>
+                        </ul>
+                        </li>
+                        <li>
+                            <div class="abc_letters">Д</div>
+                            <ul class="regions">
+                                <li> <a href="#">Дагестан респ.</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="abc_letters">Е</div>
+                            <ul class="regions">
+                            <li> <a href="#lightbox2" class="open-lightbox" rel="region87">Еврейская авт. обл.</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> 
+            </div>      
+            
+        </div>
+        
+
+       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
