@@ -58,12 +58,12 @@
                         <input type="text" class="input-search" placeholder="Поиск...">
                         <div class="select select-search">
                                 <a href="javascript:void(0);" class="slct search-slct">По обьявлениям</a>
-                                <ul class="drop">
+                                <!--<ul class="drop">
                                     <li><a >select</a></li>
                                     <li><a >select</a></li>
                                     <li><a >select</a></li>
                                     <li><a >select</a></li>
-                                </ul>
+                                </ul>-->
                                 <input type="hidden" id="select" />
                             </div>
                         <input type="submit" value="Найти" class="find">
@@ -116,10 +116,7 @@
                 <div class="sorting-model clearfix">
                     <div class="sorting-model-left">
                         <span>Сортировать по :</span>
-                        <select>
-                            <option value="">цене</option>
-                            <option value="">цене</option>
-                        </select>
+                        <div class="sort-slct active">цене</div>
                         <span class="sort-slct">дате</span>
                         <span class="sort-slct">году</span>
                         <span class="sort-slct">пробегу</span>
@@ -363,7 +360,22 @@
                                 </ul>
                                 <input type="hidden" id="select">
                             </div>
+                            <div class="ui-value">
+                                <span>20</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>50</span>
+                                <span>60</span>
+                                <span>70 тыщ.</span>
+                            </div>
+                            <div class="sliderCont">
+                                <div id="slider"><div class="ui-slider-range ui-widget-header"></div>
+                                <a class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a>
+                                <a class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></div>
+                           </div>
+
                             <input type="checkbox" id="price" class="photo-check" placeholder="">
+
                             <label for="price">только с ценой</label>
 
                         </div>
@@ -374,11 +386,11 @@
                             <input type="text" placeholder="до" class="year-input">
                         </div>
                         <div class="sale-input-block">
-                            <a ><span>Коробка передач</span></a>
+                            <a class="transmission"><span>Коробка передач</span></a>
                         </div>
                         <div class="sale-input-block">
-                            <a >Основные</a>
-                            <a >Дополнительные</a>
+                            <a class="var-link active">Основные</a>
+                            <a class="var-link">Дополнительные</a>
                         </div>
                         <div class="sale-input-block">
                             <p>Страна:</p>
@@ -509,7 +521,9 @@
         
 
        
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/jquery.ui-slider.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/filter.js"></script>
     </body>
 </html>

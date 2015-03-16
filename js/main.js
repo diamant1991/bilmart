@@ -7,7 +7,13 @@ $( document ).ready(function() {
 	$('input,textarea').blur(function(){
 	  $(this).attr('placeholder',$(this).data('placeholder'));
 });
-
+	
+$(document).mouseup(function (e) {
+    var container = $(".dropdown");
+    if (container.has(e.target).length === 0){
+        container.hide();
+    }
+});
 	$('.cabinet-link').click(function(){
       
   if ($(".dropdown").css("display") == "none") {
@@ -21,12 +27,9 @@ $( document ).ready(function() {
     $('.tab-link').removeClass('active');
     $(this).addClass('active');
   });
-	/*$(document).mouseup(function (e) {
-    var container = $(".dropdown");
-    if (container.has(e.target).length === 0){
-        container.hide();
-    }
-});*/
+
+	
+	
  $('.geo-link').click(function(){
    		if($('.modal').attr('visible')!='true'){
 	   		$('.form-mask').fadeIn(400);

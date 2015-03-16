@@ -58,12 +58,12 @@
                         <input type="text" class="input-search" placeholder="Поиск...">
                         <div class="select select-search">
                                 <a href="javascript:void(0);" class="slct search-slct">По обьявлениям</a>
-                                <ul class="drop">
+                                <!--<ul class="drop">
                                     <li><a >select</a></li>
                                     <li><a >select</a></li>
                                     <li><a >select</a></li>
                                     <li><a >select</a></li>
-                                </ul>
+                                </ul>-->
                                 <input type="hidden" id="select" />
                             </div>
                         <input type="submit" value="Найти" class="find">
@@ -94,12 +94,17 @@
                         <a href="#">Главная&nbsp;&nbsp;></a>
                    </li>
                    <li>
-                        <a href="#">Подать обьявления &nbsp;&nbsp;></a>
+                        <a href="#">Подать обьявления &nbsp;&nbsp;</a>
                    </li>
                    
                  </ul>
 
             </div>
+            <div class="psyProgressBar">
+                <progress max="100" value="75" class="psyProgressBar__line"></progress>
+                <i class="psyProgressBar__text">Заполненость:75%</i>
+            </div>
+            
            <div class="center-block">
                <h3 class="feat-h3 margin-top-20">Добавить новое объявление</h3>
                <div class="sale-rent">
@@ -555,7 +560,11 @@
                     <input type="submit" value="Разместить объявление" class="submit agreement-submit">
                 </div>
            </div>
-            
+            <div class="sidebar">
+                <div class="notice-tooltip">
+                    <p>Введите понятный и подробный заголовок, что бы привлечь внимание к объявлению</p>
+                </div>
+            </div>
         
                 
             
@@ -657,5 +666,6 @@
        
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    
     </body>
 </html>

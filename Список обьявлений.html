@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <script src="js/modernizr-2.8.3.min.js"></script>
+       
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -58,12 +59,12 @@
                         <input type="text" class="input-search" placeholder="Поиск...">
                         <div class="select select-search">
                                 <a href="javascript:void(0);" class="slct search-slct">По обьявлениям</a>
-                                <ul class="drop">
+                                <!--<ul class="drop">
                                     <li><a >select</a></li>
                                     <li><a >select</a></li>
                                     <li><a >select</a></li>
                                     <li><a >select</a></li>
-                                </ul>
+                                </ul>-->
                                 <input type="hidden" id="select" />
                             </div>
                         <input type="submit" value="Найти" class="find">
@@ -335,7 +336,22 @@
                                 </ul>
                                 <input type="hidden" id="select">
                             </div>
+                            <div class="ui-value">
+                                <span>20</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>50</span>
+                                <span>60</span>
+                                <span>70 тыщ.</span>
+                            </div>
+                            <div class="sliderCont">
+                                <div id="slider"><div class="ui-slider-range ui-widget-header"></div>
+                                <a class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a>
+                                <a class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></div>
+                           </div>
+
                             <input type="checkbox" id="price" class="photo-check" placeholder="">
+
                             <label for="price">только с ценой</label>
 
                         </div>
@@ -481,7 +497,9 @@
         
 
        
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+     <script src="js/jquery.ui-slider.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/filter.js"></script>
     </body>
 </html>

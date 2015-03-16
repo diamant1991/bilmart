@@ -58,12 +58,12 @@
                         <input type="text" class="input-search" placeholder="Поиск...">
                         <div class="select select-search">
                                 <a href="javascript:void(0);" class="slct search-slct">По обьявлениям</a>
-                                <ul class="drop">
+                                <!--<ul class="drop">
                                     <li><a >select</a></li>
                                     <li><a >select</a></li>
                                     <li><a >select</a></li>
                                     <li><a >select</a></li>
-                                </ul>
+                                </ul>-->
                                 <input type="hidden" id="select" />
                             </div>
                         <input type="submit" value="Найти" class="find">
@@ -202,11 +202,68 @@
                     </div>
                     <div class="right-block total-price">
                         <p>Цена: <span class="bold-rub">750</span> </p>
+
                     </div>
                 </div>
                 <p class="choice-p">2. Выберите способ оплаты</p>
-                <img src="images/paypal.jpg" alt="" style="margin-top:10px;">
+                <div class="variant-payment-block clearfix">
+                    <div class="variant-left clearfix">
+                        <div class="variant-payment clearfix">
+                        <label><input type="radio" checked="checked" name="dva" placeholder="">
+                        <img src="images/sms.jpg" alt="">
+                            <div class="pay-link">
 
+                                <p><span class="sms">sms</span> <span class="pay-price">999 руб.</span></p>
+                                <p class="operators">Абонентам МТС,Мегафон,Билайн,Tele2,Utel</p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="variant-payment clearfix">
+                        <label><input type="radio" checked="checked" name="dva" placeholder="">
+                        <img src="images/pl-cart.jpg" alt="">
+                            <div class="pay-link">
+                                 <p><span class="sms-link">Пластиковая карта</span> <span class="pay-price">999 руб.</span></p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="variant-payment clearfix">
+                        <label><input type="radio" checked="checked" name="dva" placeholder="">
+                        <img src="images/yandex.jpg" alt="">
+                            <div class="pay-link">
+                                 <p><span class="sms-link">Яндекс.Деньги</span> <span class="pay-price">999 руб.</span></p>
+                            </div>
+                        </label>
+                    </div>
+                    </div>
+                    <div class="variant-right clearfix">
+                        <div class="variant-payment clearfix">
+                        <label><input type="radio" checked="checked" name="dva" placeholder="">
+                        <img src="images/qivi.jpg" alt="">
+                            <div class="pay-link">
+                                 <p><span class="sms-link">QIWI Кошелёк</span> <span class="pay-price">999 руб.</span></p>
+                            </div>
+                        </label>
+                    </div> 
+                    <div class="variant-payment clearfix">
+                        <label><input type="radio" checked="checked" name="dva" placeholder="">
+                        <img src="images/webmoney.jpg" alt="">
+                            <div class="pay-link">
+                                 <p><span class="sms-link">Webmoney</span> <span class="pay-price">999 руб.</span></p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="variant-payment clearfix">
+                        <label><input type="radio" checked="checked" name="dva" placeholder="">
+                        <img src="images/euroset.jpg" alt="">
+                            <div class="pay-link">
+                                 <p><span class="sms-link">Евросеть, Связной</span> <span class="pay-price">999 руб.</span></p>
+                            </div>
+                        </label>
+                    </div>
+                    </div>
+                    
+                    
+                </div>
                 <div class="total-payment">
                     <p class="payment-p">Всего к оплате: <span class="large-rub">1250</span></p>
                     <input type="submit" class="submit payment-submit" value="Оплатить">
