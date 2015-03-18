@@ -27,6 +27,14 @@ $(document).mouseup(function (e) {
     $('.tab-link').removeClass('active');
     $(this).addClass('active');
   });
+$('.sale-rent a').click(function() {
+    $('.sale-rent a').removeClass('active');
+    $(this).addClass('active');
+  });
+$('.list li').click(function() {
+    $('.list li').removeClass('active');
+    $(this).addClass('active');
+  });
 
 	
 	
@@ -83,15 +91,25 @@ $('.slct').click(function(){
 
 	return false;
 });
-$('.btn-top').click(function () {
-      $('body, html').animate({
-        scrollTop: 0
-      }, 1000);
-    });
+
 
 });
 
-   
+   var top_show = 100; 
+  var delay = 1300; 
+  $(document).ready(function() {
+    $(window).scroll(function () { 
+      if ($(this).scrollTop() > top_show) $('.btn-top').fadeIn();
+      else $('.btn-top').fadeOut();
+    });
+
+    $('.btn-top').click(function () {
+      $('body, html').animate({
+        scrollTop: 0
+      }, delay);
+    });
+
+  });
 
     
   

@@ -154,11 +154,13 @@
             </div>
             <div class="private-block" id="advertisement-2">
                 <ul class="list">
-                    <li>
-                        <a href="#" class="active">Продажа 5</a>
+
+                    <li class="active" onclick="opcl_2(mydivs_2,'#sale-block'); return false;">
+                        <a >Продажа </a><span>(5)</span>
                     </li>
-                    <li>
-                        │&nbsp;<a href="#">Аренда </a><span>(1)</span>
+
+                    <li onclick="opcl_2(mydivs_2,'#arends-block'); return false;">
+                        │&nbsp;<a >Аренда </a><span>(1)</span>
                     </li>
                     
                 </ul>
@@ -173,7 +175,7 @@
                     </div>
                     
                 </div>
-                <div class="tovar-text">
+                <div class="tovar-text" id="sale-block">
                     <table class="tovar-table">
                         <tbody><tr>
                             <td width="80">5 марта</td>
@@ -237,6 +239,23 @@
                         </tr>
                     </tbody></table>
                 </div>
+                <div class="tovar-text" id="arends-block">
+                    <table class="tovar-table">
+                        <tbody><tr>
+                            <td width="80">5 марта</td>
+                            <td width="110"><p class="adver-price rub_icon">50 232 754 </p></td>
+                            <td width="30"><span class="black-photo">3</span></td>
+                            <td width="">
+                                <a href="#" class="adver-link">Jungheinrich DRL-6RLGP (серия II)</a>
+                                <span class="year-model">2008</span>
+                            </td>
+                            <td width="130"><a href="#" class="sevec">Севекс</a> </td>
+                            <td width="">Владивосток</td>
+                            
+                        </tr>
+
+                    </tbody></table>
+                </div>
             </div>
 
             
@@ -246,6 +265,16 @@
                     var mydivs=new Array('#advertisement-2','#about-company');
 
                     function opcl(arr, e){
+                        if ($(e).css('display') == 'none'){
+                            for(var i in arr){   
+                               $(arr[i]).hide();
+                            }
+                            $(e).show();       
+                        }
+                    }
+                    var mydivs_2=new Array('#sale-block','#arends-block');
+
+                    function opcl_2(arr, e){
                         if ($(e).css('display') == 'none'){
                             for(var i in arr){   
                                $(arr[i]).hide();
