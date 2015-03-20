@@ -36,7 +36,18 @@ $('.list li').click(function() {
     $(this).addClass('active');
   });
 
-	
+$('.promotion-services').click(function() {
+    $('.promotion-services').removeClass('active');
+    $(this).addClass('active');
+  });
+	$('.var-link').click(function() {
+    $('.var-link').removeClass('active');
+    $(this).addClass('active');
+  });
+  $('.sort-slct').click(function() {
+    $('.sort-slct').removeClass('active');
+    $(this).addClass('active');
+  });
 	
  $('.geo-link').click(function(){
    		if($('.modal').attr('visible')!='true'){
@@ -62,7 +73,16 @@ $('.form-mask').click(function(){
         $('.modal').fadeOut(400);
         $('.modal').attr({'visible':'false'})
 	})
-
+ $('.transmission').click(function(){
+      if($('.trans-check').attr('visible')!='true'){
+          $('.trans-check').slideDown(400);
+          $('.trans-check').attr({'visible':'true'})
+      }
+      else{
+          $('.trans-check').slideUp(400);
+          $('.trans-check').attr({'visible':'false'})
+      }
+  })
 // Select
 $('.slct').click(function(){
 	var dropBlock = $(this).parent().find('.drop');

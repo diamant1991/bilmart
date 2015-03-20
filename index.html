@@ -56,9 +56,14 @@
                     </div>
                     <div class="search-block">
                         <input type="text" class="input-search" placeholder="Поиск...">
-                        <div class="select select-search">
-                                <a href="javascript:void(0);" class="slct search-slct">По обьявлениям</a>
-                                
+                        <div class="select select-search slct-sub">
+                                <a href="javascript:void(0);" class="slct search-slct slct-sub">По обьявлениям</a>
+                                <ul class="drop">
+                                    <li><a >Вариант 1</a></li>
+                                    <li><a >Вариант 2</a></li>
+                                    <li><a >Вариант 3</a></li>
+                                    <li><a >Вариант 4</a></li>
+                                </ul>
                                 <input type="hidden" id="select" />
                             </div>
                         <input type="submit" value="Найти" class="find">
@@ -216,9 +221,12 @@
                         </ul>
                     </div>
                     <div class="show-block clearfix">
-                        <div class="show-container">
-                            <p>Состояние</p>
-                            <div class="select">
+
+                        <table class="show-table">
+                            <tr>
+                                <td>
+                                    <p>Состояние</p>
+                                    <div class="select">
                                 <a href="javascript:void(0);" class="slct">Новое и б/у:</a>
                                 <ul class="drop">
                                     <li><a >Новое и б/у:</a></li>
@@ -228,15 +236,13 @@
                                 </ul>
                                 <input type="hidden" id="select" />
                             </div>
-                        </div>
-                        <div class="show-container">
-                            <p>Цена:</p>
-                            <input type="text" class="input-price" placeholder="от">
-                            <span>-</span>
-                            <input type="text" class="input-price" placeholder="до">
-                        
-                      
-                            <div class="select">
+                                </td>
+                                <td>
+                                    <p>Цена:</p>
+                                    <input type="text" class="input-price" placeholder="от">
+                                    <span class="def">-</span>
+                                    <input type="text" class="input-price" placeholder="до">
+                                    <div class="select">
                                 <a href="javascript:void(0);" class="slct currency">руб</a>
                                 <ul class="drop drop-currency">
                                     <li><a >руб</a></li>
@@ -246,9 +252,9 @@
                                 </ul>
                                 <input type="hidden" id="select" />
                             </div>
-                     </div>
-                        <div class="show-container">
-                            <p>Страна:</p>
+                                </td>
+                                <td>
+                                    <p>Страна:</p>
                             <div class="select">
                                 <a href="javascript:void(0);" class="slct">Любая</a>
                                 <ul class="drop">
@@ -259,12 +265,22 @@
                                 </ul>
                                 <input type="hidden" id="select" />
                             </div>
-                            <input type="checkbox" id="photo" class="photo-check">
-                            <label for="photo">с фото</label>
-                        </div>
-                        <div class="show-container show-all">
-                            <input type="submit" value="показать 152 предложения" class="submit-show">
-                        </div>
+                                </td>
+                                <td>
+                                    <div class="ver-block">
+                                         <input type="checkbox" id="photo" class="photo-check">
+                                         <label for="photo">с фото</label>
+                                     </div>
+                                </td>
+                                <td>
+                                    <div class="ver-block">
+                                        <input type="submit" value="показать 152 предложения" class="submit-show">
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                        </table>
                     </div>
                 </div>
                 <div class="center-left">

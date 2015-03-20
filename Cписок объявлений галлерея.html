@@ -56,14 +56,14 @@
                     </div>
                     <div class="search-block">
                         <input type="text" class="input-search" placeholder="Поиск...">
-                        <div class="select select-search">
-                                <a href="javascript:void(0);" class="slct search-slct">По обьявлениям</a>
-                                <!--<ul class="drop">
-                                    <li><a >select</a></li>
-                                    <li><a >select</a></li>
-                                    <li><a >select</a></li>
-                                    <li><a >select</a></li>
-                                </ul>-->
+                        <div class="select select-search slct-sub">
+                                <a href="javascript:void(0);" class="slct search-slct slct-sub">По обьявлениям</a>
+                                <ul class="drop">
+                                    <li><a >Вариант 1</a></li>
+                                    <li><a >Вариант 2</a></li>
+                                    <li><a >Вариант 3</a></li>
+                                    <li><a >Вариант 4</a></li>
+                                </ul>
                                 <input type="hidden" id="select" />
                             </div>
                         <input type="submit" value="Найти" class="find">
@@ -347,19 +347,31 @@
                             -
                             <input type="text" placeholder="до" class="year-input">
                             <p style="margin-top:15px;">Цена:</p>
-                            <input type="text" placeholder="от" class="price-input pos" >
-                            <span class="pos" >-</span>
-                            <input type="text" placeholder="до" class="price-input pos">
-                            <div class="select">
-                                <a href="javascript:void(0);" class="slct currency">руб</a>
-                                <ul class="drop drop-currency">
-                                    <li><a>руб</a></li>
-                                    <li><a>uah</a></li>
-                                    <li><a>usd</a></li>
-                                    <li><a>eur</a></li>
-                                </ul>
-                                <input type="hidden" id="select">
-                            </div>
+                            <table class="fil-table">
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="от" class="price-input pos">
+                                    </td>
+                                    <td>
+                                        <span class="pos" >-&nbsp;</span>
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="до" class="price-input pos">
+                                    </td>
+                                    <td>
+                                        <div class="select">
+                                            <a href="javascript:void(0);" class="slct currency">руб</a>
+                                            <ul class="drop drop-currency">
+                                                <li><a>руб</a></li>
+                                                <li><a>uah</a></li>
+                                                <li><a>usd</a></li>
+                                                <li><a>eur</a></li>
+                                            </ul>
+                                            <input type="hidden" id="select">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
                             <div class="ui-value">
                                 <span>20</span>
                                 <span>30</span>
@@ -387,6 +399,27 @@
                         </div>
                         <div class="sale-input-block">
                             <a class="transmission"><span>Коробка передач</span></a>
+                            <div class="trans-check clearfix">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="numb-1" class="number-check" placeholder="">
+                                        <label for="numb-1">цыфра</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="numb-2" class="number-check" placeholder="">
+                                        <label for="numb-2">цыфра</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="numb-3" class="number-check" placeholder="">
+                                        <label for="numb-3">цыфра</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="numb-4" class="number-check" placeholder="">
+                                        <label for="numb-4">цыфра</label>
+                                    </li>
+                                </ul>
+                                
+                            </div>
                         </div>
                         <div class="sale-input-block">
                             <a class="var-link active">Основные</a>
